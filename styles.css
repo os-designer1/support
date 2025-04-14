@@ -13,51 +13,6 @@ body{
   align-items: center;
 }
 
-/* تصميم شاشة التحميل */
-.loader {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #f1f1f1a8;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 9999;
-}
-
-.loader div {
-width: 15px;
-height: 15px;
-margin: 0 5px;
-background-color: #3498db;
-border-radius: 50%;
-animation: bounce 1.2s infinite ease-in-out;
-}
-
-.dot1 {
-animation-delay: 0s;
-}
-
-.dot2 {
-animation-delay: 0.2s;
-}
-
-.dot3 {
-animation-delay: 0.4s;
-}
-
-/* حركة البونسي */
-@keyframes bounce {
-0%, 100% {
-  transform: translateY(0);
-}
-50% {
-  transform: translateY(-20px);
-}
-}
-
 /* إخفاء المحتوى الأول */
 #content {
 text-align: center;
@@ -67,7 +22,7 @@ margin-top: 50px;
 .header {
   background-color: #1f1f1fee;
   color: white;
-  padding: 7px 20px;
+  padding: 3px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,8 +33,7 @@ margin-top: 50px;
 }
 .logo {
   margin-right: 40px;
-  height: 25px; /* ارتفاع الصورة */
-}
+  height: 37px; /* ارتفاع الصورة */}
 
 .nav {
   display: flex;
@@ -180,13 +134,14 @@ margin-top: 50px;
   width: 40%;
   display: flex;
   justify-content: space-between;
-  margin: 10px; /* تعديل الهامش ليكون متجاوب */
+  margin: 5px; /* تعديل الهامش ليكون متجاوب */
   border-radius: 20px;
 }
 
 @media (max-width: 600px) {
   .imge img {
-    width: 80%; /* تعديل العرض ليكون مناسب للشاشات الصغيرة */
+    border-radius: 0;
+    width: 100%; /* تعديل العرض ليكون مناسب للشاشات الصغيرة */
   }
 }
 
