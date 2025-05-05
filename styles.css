@@ -52,13 +52,7 @@ margin-top: 50px;
   cursor: pointer;
   animation: move 2s ;
 }
-@keyframes move {
- 
-  50% {
-    transform: translateX(-100px);
-  }
- 
-}
+
 @media (max-width: 834px) {
   .nav {
       display: none;
